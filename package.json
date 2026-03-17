@@ -73,6 +73,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/OpenWonderLabs/OpenClaw-channel-SwitchBot.git"
+    "url": "git+https://github.com/OpenWonderLabs/OpenClaw-channel-SwitchBot.git"
   }
 }
