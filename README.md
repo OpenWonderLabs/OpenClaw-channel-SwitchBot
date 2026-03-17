@@ -21,7 +21,7 @@ SwitchBot Channel is an official channel plugin for the OpenClaw platform that r
 ### System Requirements
 
 - **OpenClaw**: >= 2026.1.0
-- **Node.js**: >= 18.0.0
+- **Node.js**: >= 20.0.0
 - **SwitchBot App**: Latest version
 
 ### Step 1: Install Plugin
