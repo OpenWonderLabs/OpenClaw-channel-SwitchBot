@@ -1,0 +1,78 @@
+{
+  "name": "@switchbot/openclaw-channel-switchbot",
+  "version": "0.1.4",
+  "description": "SwitchBot channel plugin for OpenClaw — real-time device status",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "version": "npm run build && git add -A dist"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "channels": [
+      "switchbot"
+    ],
+    "channel": {
+      "id": "switchbot",
+      "label": "SwitchBot",
+      "selectionLabel": "SwitchBot (Smart Home)",
+      "docsPath": "/channels/switchbot",
+      "docsLabel": "switchbot",
+      "blurb": "Real-time SwitchBot device status",
+      "order": 85,
+      "aliases": [
+        "switchbot"
+      ]
+    },
+    "install": {
+      "npmSpec": "@switchbot/openclaw-channel-switchbot",
+      "localPath": ".",
+      "defaultChoice": "npm"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^18.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "mqtt": "5.10.3",
+    "zod": "3.24.2"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.1.0"
+  },
+  "keywords": [
+    "openclaw",
+    "plugin",
+    "switchbot",
+    "iot",
+    "mqtt",
+    "smart-home"
+  ],
+  "author": "SwitchBot Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.x"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "openclaw.plugin.json",
+    "package.json",
+    "package-lock.json",
+    "tsconfig.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenWonderLabs/OpenClaw-channel-SwitchBot.git"
+  }
+}

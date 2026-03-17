@@ -1,0 +1,25 @@
+{
+  "id": "openclaw-channel-switchbot",
+  "channels": ["switchbot"],
+  "name": "SwitchBot",
+  "version": "0.1.4",
+  "description": "SwitchBot channel plugin for OpenClaw — real-time device status",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "token": {
+        "type": "string",
+        "description": "SwitchBot API token from developer settings"
+      },
+      "secret": {
+        "type": "string",
+        "description": "SwitchBot API secret from developer settings"
+      }
+    }
+  },
+  "uiHints": {
+    "token": { "label": "API Token", "placeholder": "Get from SwitchBot App Developer Settings", "sensitive": true },
+    "secret": { "label": "API Secret", "placeholder": "Get from SwitchBot App Developer Settings", "sensitive": true }
+  }
+}
